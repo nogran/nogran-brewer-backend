@@ -13,8 +13,7 @@ public class Cerveja {
 	@NotBlank(message = "O atributo Nome nao pode ser vazio.")
 	private String nome;
 	
-	@NotBlank(message = "O atributo Descricao nao pode ser vazio.")
-	@Size(min = 5, max = 255, message = "Número mínimo de caracteres é 5 e número máximo de caracteres é 255.")
+	@Size(min = 5, max = 255, message = "Número mínimo de caracteres em Descricao é 5 e número máximo de caracteres é 255.")
 	private String descricao;
 	
 	@NotNull(message = "O atributo Quantidade nao pode ser nulo.")
