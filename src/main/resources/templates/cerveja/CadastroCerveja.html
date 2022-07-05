@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
 
 <body>
 
@@ -9,11 +10,20 @@
 </body>
 
 <form method="POST">
-<label>SKU</label>
-<input tyepe="text" name="sku">
-<br>
-
-<input type="submit" value="Salvar">
+	<span th:text="${mensagem}"></span> <br> <label>SKU</label> <input
+		type="text" id="sku" name="sku"> <br>
+		
+	<label>Nome</label>
+	<input type="text" id="nome" name="nome">
+	
+	<label>Descricao</label>
+	<input type="text" id="descricao" name="descricao">
+	
+	<label>Quantidade</label>
+	<input type="text" id="quantidade" name="quantidade">
+	
+	<input
+		type="submit" value="Salvar">
 </form>
 
 </html>
