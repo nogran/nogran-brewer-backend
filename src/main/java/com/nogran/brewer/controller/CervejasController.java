@@ -24,13 +24,16 @@ public class CervejasController {
 		if (result.hasErrors()) {
 				return novo(cerveja);
 		}
-		
-		System.out.println(">>> sku: " + cerveja.getSku());
-		System.out.println(">>> nome: " + cerveja.getNome());
-		System.out.println(">>> descricao: " + cerveja.getDescricao());
-		System.out.println(">>> quantidade: " + cerveja.getQuantidade());
+//		System.out.println(">>> sku: " + cerveja.getSku());
+//		System.out.println(">>> nome: " + cerveja.getNome());
+//		System.out.println(">>> descricao: " + cerveja.getDescricao());
+//		System.out.println(">>> quantidade: " + cerveja.getQuantidade());
 		attributes.addFlashAttribute("mensagem", "Cerveja salva com sucesso!");
 		return "redirect:/cervejas/novo";
-		
+	}
+	
+	@RequestMapping("/cervejas/cadastro")
+	public String cadastro() {
+		return "cerveja/cadastro-produto";
 	}
 }
