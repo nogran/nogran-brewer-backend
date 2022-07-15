@@ -126,26 +126,75 @@
 					</div>
 				
 					<div class="form-group">
-						<label for="input-produto-descricao">Descrição</label>
-						<textarea id="input-produto-descricao" rows="3" class="form-control"></textarea>
+						<label for="descricao">Descrição</label>
+						<textarea id="descricao" rows="3" class="form-control"></textarea>
 					</div>
 				
 					<div class="row">
-						<div class="col-sm-3">
-							<div class="form-group">
-								<label for="input-produto-preco">Preço unitário</label>
-								<input id="input-produto-preco" type="text" class="form-control" placeholder="R$"/>
+						<div class="col-sm-3  form-group">
+								<label for="estilo">Estilo</label>
+								<select id="estilo" class="form-control">
+									<option value="">Selecione o estilo</option>
+								</select>
+						</div>
+						
+						<div class="col-sm-3  form-group">
+								<label for="sabor">Sabor</label>
+								<select id="sabor" class="form-control">
+									<option value="">Selecione o sabor</option>
+								</select>
+						</div>						
+							
+						<div class="col-sm-3  form-group">
+							<label for="teorAlcoolico">Teor alcoolico</label>
+							<div class="input-group">
+								<input id="teorAlcoolico" type="text" class="form-control"/>
+								<div class="input-group-addon">%</div>
 							</div>
 						</div>
-							
-						<div class="col-sm-3">
-							<div class="form-group">
-								<label for="input-produto-estoque">Estoque</label>
-								<input id="input-produto-estoque" type="text" class="form-control" placeholder="Unidades"/>
+						
+						<div class="col-lg-3 col-sm-6  form-group">
+							<label for="origem">Origem</label>
+							<div>
+								<div class="radio radio-inline">
+									<input type="radio" name="origem">
+									<label>Nacional</label>
 								</div>
+															
+								<div class="radio radio-inline">
+									<input type="radio" name="origem">
+									<label>Internacional</label>
+								</div>
+							</div>												
 						</div>
 					</div>
+					
+					<div class="row">
+						<div class="col-sm-3  form-group">
+							<label for="preco">Preco</label>
+							<div class="input-group">
+								<div class="input-group-addon">R$</div>
+								<input id="preco" type="text" class="form-control"/>
+							</div>
+						</div>	
 						
+						<div class="col-sm-3  form-group">
+							<label for="comissao">Comissao</label>
+							<div class="input-group">
+								<div class="input-group-addon">R$</div>
+								<input id="comissao" type="text" class="form-control"/>
+							</div>
+						</div>							
+							
+						<div class="col-sm-3  form-group">
+							<label for="estoque">Estoque</label>
+							<div class="input-group">
+								<input id="estoque" type="text" class="form-control"/>
+							</div>
+						</div>
+									
+					</div>					
+					
 					<div class="form-group">
 						<button class="btn  btn-primary" type="submit">Salvar</button>
 					</div>
