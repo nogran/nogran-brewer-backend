@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -29,6 +30,9 @@
 
 		<!-- Bean Validation / Hibernate Validator -->
 		<hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+		
+		<!-- Thymeleaf - Layout Dialect -->
+		<thymeleaf-layout-dialect.version>3.1.0</thymeleaf-layout-dialect.version>
 
 	</properties>
 
@@ -102,7 +106,25 @@
             <version>${hibernate-validator.version}</version>
             <scope>compile</scope>
         </dependency>
+        
+                <!-- Thymeleaf - Layout Dialect -->
+		<dependency>
+		    <groupId>nz.net.ultraq.thymeleaf</groupId>
+		    <artifactId>thymeleaf-layout-dialect</artifactId>
+		    <version>${thymeleaf-layout-dialect.version}</version>
+		</dependency>		
 
 	</dependencies>
+	
+		<repositories>
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+    		<name>Sonatype Nexus Snapshots</name>
+    		<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    		<snapshots>
+      			<enabled>true</enabled>
+    		</snapshots>
+		</repository>
+	</repositories>
 
 </project>
